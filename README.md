@@ -53,7 +53,7 @@ Bit order: LSB first.
 To simulate:
 
 1. Open ModelSim/Vivado/any simulator.
-2. Run `tx_rx_tb.sv` as the top-level testbench.
+2. Run `uart_tx_rx_tb.v` as the top-level testbench.
 3. Observe the waveforms or output data for verification.
 
 ---
