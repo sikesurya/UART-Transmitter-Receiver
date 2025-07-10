@@ -10,10 +10,8 @@ This project simulates a complete **UART (Universal Asynchronous Receiver Transm
 
 | File          | Description |
 |---------------|-------------|
-| `top.sv`      | Main module that contains both UART TX and RX logic. Handles baud rate timing, bit sampling, and shift operations. |
-| `tx_rx_tb.sv` | Testbench that drives the `top` module, simulates transmission of random bytes, and verifies the loopback through TX-RX connection. |
-| `docs/`       | (Optional) Diagrams or architectural flowcharts for better visualization. |
-| `simulations/`| (Optional) Stores waveform dump files like `.vcd` for GTKWave or ModelSim analysis. |
+| `uart_tx_rx.v`      | Main module that contains both UART TX and RX logic. Handles baud rate timing, bit sampling, and shift operations. |
+| `uart_tx_rx_tb.v` | Testbench that drives the `top` module, simulates transmission of random bytes, and verifies the loopback through TX-RX connection. |
 
 ---
 
