@@ -53,7 +53,7 @@ always@(posedge clk) begin
         idle: begin
                 tx <= 1'b1;  ///idle state holds logic 1 forever until start bit
                 txData <= 0; //no data from user yet
-                bitIndex <= 0; //obv no bits sent yet so bitIndex = 0
+                bitIndex <= 0; //obviously no bits sent yet so bitIndex = 0
                 shifttx <= 0;
          
                 if(start == 1) begin
