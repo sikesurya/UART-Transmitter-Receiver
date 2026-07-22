@@ -11,8 +11,8 @@ output [7:0] rxout,
 output rxdone, txdone  /// flags to mark completion of an operation
 );
 
-parameter clk_value = 100_000, baud = 9600;
-parameter wait_count = clk_value/baud; //determines when to trigger the trigger signal
+parameter clk_value = 100_000, baud = 9600; // clk is in clocks/second, baud is in bits/second. so wait_count = clocks/bits
+parameter wait_count = clk_value/baud; // counts the no of clock edges after which one of the 8 bits is registered...determines when to trigger the trigger signal
 
 reg bitDone = 0;
 integer count = 0;
